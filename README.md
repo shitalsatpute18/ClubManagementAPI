@@ -155,7 +155,7 @@ GO
 
 ALTER TABLE [dbo].[GymClasses]  WITH CHECK ADD CHECK  (([EndDate]>getdate()))
 GO
-Booking Table scripts :
+ # Booking Table scripts :
 
 USE [GymManagementDB]
 GO
@@ -195,7 +195,7 @@ GO
 
 ALTER TABLE [dbo].[Bookings]  WITH CHECK ADD CHECK  (([ParticipationDate]>getdate()))
 GO
-Members Table Script:
+# Members Table Script:
 USE [GymManagementDB]
 GO
 
