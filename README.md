@@ -116,7 +116,6 @@ GO
 
 ALTER DATABASE [GymManagementDB] SET  READ_WRITE 
 GO
--------------------------------------------------------------------------------------------------------------------------------------
 # GymClasses Table Script :
 USE [GymManagementDB]
 GO
@@ -219,7 +218,7 @@ GO
 Schema for the database 
 CREATE DATABASE GymManagementDB;
 GO
----------------------------------------------------------------------------------------------------------
+
 # GymClasses Table :
 USE GymManagementDB;
 GO
@@ -235,14 +234,14 @@ CREATE TABLE GymClasses (
     CONSTRAINT UQ_ClassDate UNIQUE (StartDate, StartTime)  
 );
 GO
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Members Table:
 CREATE TABLE Members (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     Name NVARCHAR(100) NOT NULL
 );
 GO
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Bookings Table :
 CREATE TABLE Bookings (
     Id INT IDENTITY(1,1) PRIMARY KEY,
